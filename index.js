@@ -63,8 +63,8 @@ function renderApp(data) {
 function initMap() {
     console.log("MAPPING")
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: -34.397, lng: 150.644 },
-        zoom: 6,
+        center: { lat: 33.9980784, lng: -117.7271775 },
+        zoom: 13,
     })
     infoWindow = new google.maps.InfoWindow()
 
@@ -98,16 +98,16 @@ function initMap() {
     }
     })
 }
-  
-  function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+
+function handleLocationError(browserHasGeolocation, infoWindow, pos) {
     infoWindow.setPosition(pos)
     infoWindow.setContent(
-      browserHasGeolocation
-        ? "Error: The Geolocation service failed."
-        : "Error: Your browser doesn't support geolocation."
+        browserHasGeolocation
+            ? "Error: The Geolocation service failed."
+            : "Error: Your browser doesn't support geolocation."
     )
     infoWindow.open(map)
-  }
+}
 
 getWeather()
 window.initMap = initMap

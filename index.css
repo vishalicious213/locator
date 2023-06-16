@@ -81,7 +81,8 @@ button:hover {
     background-color: #1d1d1c;
     padding: 1rem;
     border-radius: .5rem;
-    line-height: 1.5rem;
+    line-height: 1.2rem;
+    font-size: .9rem;
     text-align: center;
 }
 
@@ -97,7 +98,6 @@ button:hover {
 }
 
 #map {
-    outline: 1px solid red;
     height: 50vh;
     margin-top: 1rem;
 }
@@ -113,8 +113,8 @@ button:hover {
     overflow: hidden;
     height: 40px;
     cursor: pointer;
-  }
+}
 
-  .custom-map-control-button:hover {
+.custom-map-control-button:hover {
     background: rgb(235, 235, 235);
-  }
+}

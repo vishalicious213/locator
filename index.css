@@ -20,14 +20,14 @@ button {
     width: 90%;
     color: gainsboro;
     background-color: black;
-    outline: 1px solid #1d1d1c;
+    outline: 1px solid gainsboro;
     padding: .5rem 0;
     border-radius: .5rem;
 }
 
 button:hover {
     color: white;
-    outline: 1px solid gainsboro;
+    outline: 1px solid white;
 }
 
 /* WEATHER */

@@ -1,3 +1,5 @@
+const button = document.getElementById("button")
+
 // ⬇️ HELPERS ⬇️
 
 async function getWeather() {
@@ -21,6 +23,12 @@ async function getWeather() {
         console.error(error)
     }
 }
+
+// ⬇️ EVENT LISTENER ⬇️
+
+button.addEventListener("click", function() {
+    console.log("clicked")
+})
 
 // ⬇️ RENDER APP ⬇️
 

@@ -26,6 +26,7 @@ async function getWeather() {
 
 function renderApp(data) {
     const weatherContainer = document.getElementById("weather-container")
+    const locationContainer = document.getElementById("location-container")
 
     weatherContainer.innerHTML = `
         <div id="weather">
@@ -39,13 +40,16 @@ function renderApp(data) {
                     <div id="temp-lo">Lo: ${Math.round(data.main.temp_min)}ºF</div>
                 </div>
             </div>
-            <div class="weather-section">
+            <div class="weather-section weather-inside">
                 <div class="desc">Feels like: ${Math.round(data.main.feels_like)}ºF</div>
-                <div id="desc" class="desc">${data.weather[0].description}</div>
                 <div class="desc">Humidity: ${data.main.humidity}</div>
-                <div id="city" class="desc">${data.name}</div>
+                <div id="desc" class="desc">${data.weather[0].description}</div>
             </div>
         </div>
+    `
+
+    locationContainer.innerHTML = `
+        <div id="city" class="desc">${data.name}</div>    
     `
 }
 

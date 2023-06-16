@@ -31,14 +31,8 @@ button:hover {
 
 /* WEATHER */
 
-#weather-container {
-    /* outline: 1px solid red; */
-}
-
 #weather {
-    /* outline: 1px solid orange; */
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
+
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, .5);
@@ -49,7 +43,6 @@ button:hover {
 }
 
 .weather-section {
-    /* outline: 1px solid yellow; */
     width: 100%;
 }
 
@@ -61,7 +54,6 @@ button:hover {
 }
 
 #temp-img img {
-    /* outline: 1px solid green; */
     width: 5rem;
     margin-right: 1rem;
 }
@@ -99,7 +91,6 @@ button:hover {
 /* LOCATION */
 
 #location-container {
-    /* outline: 1px solid red; */
     text-align: center;
     font-size: 1.2rem;
 }

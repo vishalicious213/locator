@@ -28,12 +28,6 @@ async function getWeather() {
 
 button.addEventListener("click", getWeather)
 
-// ⬇️ EVENT HANDLERS ⬇️
-
-function refreshApp() {
-
-}
-
 // ⬇️ RENDER APP ⬇️
 
 function renderApp(data) {

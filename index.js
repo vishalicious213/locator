@@ -16,7 +16,7 @@ async function getWeather() {
         }
 
         const data = await response.json()
-        renderWeather(data)
+        renderApp(data)
     } catch (error) {
         console.error(error)
     }
@@ -24,3 +24,29 @@ async function getWeather() {
 
 // ⬇️ RENDER APP ⬇️
 
+function renderApp(data) {
+    const weatherContainer = document.getElementById("weather-container")
+
+    weatherContainer.innerHTML = `
+        <div id="weather">
+            <div class="weather-section">
+                <div id="temp-img">
+                    <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}.png">
+                    <div id="temp">${Math.round(data.main.temp)}ºF</div>
+                </div>
+                <div id="temperatures">
+                    <div id="temp-hi">Hi: ${Math.round(data.main.temp_max)}ºF</div>
+                    <div id="temp-lo">Lo: ${Math.round(data.main.temp_min)}ºF</div>
+                </div>
+            </div>
+            <div class="weather-section">
+                <div class="desc">Feels like: ${Math.round(data.main.feels_like)}ºF</div>
+                <div id="desc" class="desc">${data.weather[0].description}</div>
+                <div class="desc">Humidity: ${data.main.humidity}</div>
+                <div id="city" class="desc">${data.name}</div>
+            </div>
+        </div>
+    `
+}
+
+getWeather()

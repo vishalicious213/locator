@@ -61,7 +61,6 @@ function renderApp(data) {
 }
 
 function initMap() {
-    console.log("MAPPING")
     map = new google.maps.Map(document.getElementById("map"), {
         center: { lat: 33.9980784, lng: -117.7271775 },
         zoom: 13,

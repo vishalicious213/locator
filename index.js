@@ -24,11 +24,15 @@ async function getWeather() {
     }
 }
 
-// ⬇️ EVENT LISTENER ⬇️
+// ⬇️ EVENT LISTENERS ⬇️
 
-button.addEventListener("click", function() {
-    console.log("clicked")
-})
+button.addEventListener("click", getWeather)
+
+// ⬇️ EVENT HANDLERS ⬇️
+
+function refreshApp() {
+
+}
 
 // ⬇️ RENDER APP ⬇️
 

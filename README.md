@@ -5,3 +5,5 @@ This is a personal project that I built because since moving from NY to CA, when
 That said, this project focuses on working with APIs, in this case the Open Weather API for temperature, weather and city name data and the Google Maps Platform for the map. I make use of asynchronous JavaScript via `async` and `await` and geolocation information via Google Maps.
 
 Deployed at: https://vish213-locator.netlify.app/
+
+![](./screenshot.jpg)
